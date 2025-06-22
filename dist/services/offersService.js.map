@@ -1,0 +1,1 @@
+{"version":3,"file":"offersService.js","sourceRoot":"","sources":["../../src/services/offersService.ts"],"names":[],"mappings":";;;;;AACA,sEAAyC;AAGzC,MAAqB,aAAa;IAC9B,MAAM,CAAC,qBAAqB,CAAE,SAAiB;QAC3C,OAAO,qBAAM,CAAC,IAAI,CAAC,KAAK,CAAA,EAAE,CAAA,KAAK,CAAC,SAAS,KAAK,SAAS,CAAC,CAAC;IAC7D,CAAC;CACJ;AAJD,gCAIC"}

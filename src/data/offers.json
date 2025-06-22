@@ -1,0 +1,16 @@
+[
+    {
+        "offerId":"1",
+        "name":"BUY1GET1",
+        "quantity":1,
+        "free": 1,
+        "productId": "3"
+    },
+    {
+        "offerId":"2",
+        "name": "BUY2GET3",
+        "quantity":2,
+        "free": 1,
+        "productId": "4"
+    }
+]

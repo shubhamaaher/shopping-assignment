@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "87337f45-50d2-437a-bfb4-f5ee4bc6ea3b",
+		"name": "Shopping Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46098296",
+		"_collection_link": "https://shubhamaher-6274905.postman.co/workspace/Shubham-Aher's-Workspace~ba99741c-a4e7-4912-8fc0-b50ebbe2d0b4/collection/46098296-87337f45-50d2-437a-bfb4-f5ee4bc6ea3b?action=share&source=collection_link&creator=46098296"
+	},
+	"item": [
+		{
+			"name": "add-item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"basketId\": \"\",\r\n    \"productId\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/basket/addProduct",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"basket",
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/calculator/calculate/a28c6a29-676f-4c04-8616-a3dc706c7238",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"calculator",
+						"calculate",
+						"a28c6a29-676f-4c04-8616-a3dc706c7238"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"basketId\": \"69ee41bf-6d8c-43d9-85bc-710ca317d867\",\r\n    \"productId\":\"4\"\r\n}"
+				},
+				"url": {
+					"raw": "{{host}}/basket/removeProduct/2/a28c6a29-676f-4c04-8616-a3dc706c7238",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"basket",
+						"removeProduct",
+						"2",
+						"a28c6a29-676f-4c04-8616-a3dc706c7238"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user\",\r\n    \"password\":\"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxMjMiLCJpYXQiOjE3NTA2MTQ4OTMsImV4cCI6MTc1MDYyMjA5M30.uFAyJIgPj5RcG8biMDruNiJizeCdwM6aMpcjK3Fe9Bc",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:3001/api",
+			"type": "string"
+		}
+	]
+}
